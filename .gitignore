@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+
+# Large datasets: keep data out of the repo and explain how to get it in the course README
+data/
