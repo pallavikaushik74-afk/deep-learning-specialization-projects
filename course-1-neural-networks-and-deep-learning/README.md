@@ -29,8 +29,7 @@ Breast Cancer Wisconsin dataset, loaded from scikit-learn (569 samples, 30 featu
 - The test set has 114 samples, so the gap between models is about 3 patients and should not be over-read.
 
 ## What I learned
-_Write 2-3 sentences in your own words here. For example: what changed when you tried different hidden units or learning rates, and what surprised you._
-
+When I changed the learning rate, 0.001 was too slow (91.2% test accuracy after 2000 iterations), while 0.1 and 0.5 trained well. Adding more hidden units or layers did not improve test accuracy, and the deepest network reached 100% on the training data without doing better on the test data, which suggests overfitting. What surprised me most was that scikit-learn’s Logistic Regression (98.2%) beat my neural network (95.6%), so a more complex model is not automatically better on a small dataset.
 ## How to run
 1. From the repo root: `pip install -r requirements.txt`
 2. Open `neural_network_breast_cancer.ipynb` in Jupyter or Google Colab
